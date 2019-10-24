@@ -165,16 +165,16 @@
                 };
 
 				function checkfailure() {
-					if (document.getElementById("bt").innerHTML == "²é¿´Ê§°Ü") {
-						document.getElementById("bt").innerHTML = "²é¿´È«²¿";
+					if (document.getElementById("bt").innerHTML == "æŸ¥çœ‹å¤±è´¥") {
+						document.getElementById("bt").innerHTML = "æŸ¥çœ‹å…¨éƒ¨";
 						var trs = document.getElementsByTagName("table")[1].getElementsByTagName('tr');
 						for( var i = 1; i < trs.length; i++ ) {
 							var tr = trs[i];
 							if( "Failure" != tr.className )
 								tr.style.display = 'none';
 						}
-					}else if(document.getElementById("bt").innerHTML == "²é¿´È«²¿") {
-						document.getElementById("bt").innerHTML = "²é¿´Ê§°Ü";
+					}else if(document.getElementById("bt").innerHTML == "æŸ¥çœ‹å…¨éƒ¨") {
+						document.getElementById("bt").innerHTML = "æŸ¥çœ‹å¤±è´¥";
 						var trs = document.getElementsByTagName("table")[1].getElementsByTagName('tr');
 						for( var i = 1; i < trs.length; i++ ) {
 							var tr = trs[i];
@@ -190,10 +190,10 @@
 			<h2>Summary</h2>
 			<table  align="center" class="details" cellpadding="5" cellspacing="2" width="100%" >
 				<tr valign="top">
-					<th>Ö´ĞĞ×ÜÊı</th>
-					<th>³É¹¦Êı</th>
-					<th>Ê§°ÜÊı</th>
-					<th>³É¹¦ÂÊ</th>
+					<th>æ‰§è¡Œæ€»æ•°</th>
+					<th>æˆåŠŸæ•°</th>
+					<th>å¤±è´¥æ•°</th>
+					<th>æˆåŠŸç‡</th>
 					<th>Average Time</th>
 					<th>Min Time</th>
 					<th>Max Time</th>
@@ -251,14 +251,14 @@
 					</td>
 				</tr>
 			</table>
-			<button class="button" id="bt" onclick="checkfailure()" style="float:right">²é¿´Ê§°Ü</button>
+			<button class="button" id="bt" onclick="checkfailure()" style="float:right">æŸ¥çœ‹å¤±è´¥</button>
 			<h2>Pages</h2>
 			<table align="center" class="details" cellpadding="5" cellspacing="2" width="100%">
 				<tr valign="top">
 					<th width="30%">URL</th>
-					<th>Ö´ĞĞ×ÜÊı</th>
-					<th>Ê§°Ü</th>
-					<th>³É¹¦ÂÊ</th>
+					<th>æ‰§è¡Œæ€»æ•°</th>
+					<th>å¤±è´¥</th>
+					<th>æˆåŠŸç‡</th>
 					<th>Average Time</th>
 					<th>Min Time</th>
 					<th>Max Time</th>
@@ -324,7 +324,7 @@
 			<div id="panel-wrap">
             <div id="left-panel">
                 <ol id="result-list">
-					<!-- Ö»°ÑÊ§°ÜµÄÉú³Éhtml -->
+					<!-- åªæŠŠå¤±è´¥çš„ç”Ÿæˆhtml -->
                     <xsl:for-each select="*[attribute::s='false']">
                         <!-- group with the previous sibling -->
                         <xsl:if test="position() = 1 or @tn != preceding-sibling::*[1]/@tn">
