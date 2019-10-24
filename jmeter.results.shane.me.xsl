@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="GB2312"?>
+<?xml version="1.0" encoding="UTF8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" indent="no" encoding="UTF-8" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN" doctype-system="http://www.w3.org/TR/html4/loose.dtd"/>
     <xsl:strip-space elements="*"/>
@@ -40,7 +40,7 @@
     <xsl:template match="/testResults">
         <html lang="en">
         <head>
-            <meta name="Author" content="shanhe.me"/>
+            <meta name="Author" content="shane.me"/>
             <title>JMeter Test Results</title>
             <style type="text/css"><![CDATA[
             
